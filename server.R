@@ -6,7 +6,7 @@
 #
 #    http://shiny.rstudio.com/
 #
-
+options(rsconnect.max.bundle.size=3145728000000000000)
 library(shiny)
 library(readxl)
 library(Amelia)
