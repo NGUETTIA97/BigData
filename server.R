@@ -25,7 +25,7 @@ library(randomForest)
 library(gbm)
 
 
-setwd("C:/Users/Elisa/Desktop/BigDataAnalytics/BigData")
+#setwd("C:/Users/Elisa/Desktop/BigDataAnalytics/BigData")
 
 
 
