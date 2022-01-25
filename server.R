@@ -28,8 +28,23 @@ library(gbm)
 #setwd("C:/Users/Elisa/Desktop/BigDataAnalytics/BigData")
 
 
+#######
+data1=function(data){
+  
+  
+  
+  data$Rev_mois[is.na(data$Rev_mois)==TRUE] <- median(data$Rev_mois,na.rm=T)
+  data$P_charge[is.na(data$P_charge)==TRUE] <- median(data$P_charge,na.rm=T)
+  
+  
+  
+  return(data)
+}
+############
 
-source("test.R",encoding = "UTF-8",echo=TRUE) 
+
+
+#source("test.R",encoding = "UTF-8",echo=TRUE) 
 # Define server logic required to draw a histogram
 shinyServer(function(input, output) {
   
